@@ -1,0 +1,62 @@
+/* General body styling */
+body {
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom container styling */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header styling */
+h1 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form control styling */
+.form-control {
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn-primary, .btn-warning, .btn-danger {
+  margin-right: 5px;
+}
+
+/* Table styling */
+.table {
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Navigation bar styling */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Custom button styles */
+.btn-custom {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
