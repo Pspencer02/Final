@@ -6,6 +6,7 @@ import Edit from './Edit';
 import CustomNavbar from './CustomNavbar';
 import './App.css';
 
+//add navbar
 const App = () => (
   <div>
     <CustomNavbar />

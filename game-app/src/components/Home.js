@@ -12,13 +12,14 @@ const Home = () => {
       .then(response => setGames(response.data))
       .catch(error => console.error('Error:', error));
   }, []);
-
+//delete game 
   const deleteGame = id => {
     axios.delete(`https://667491d775872d0e0a96e75b.mockapi.io/games/${id}`)
       .then(() => setGames(games.filter(game => game.id !== id)))
       .catch(error => console.error('Error:', error));
   };
 
+  //return game 
   return (
     <div>
       <h1>Video Games</h1>

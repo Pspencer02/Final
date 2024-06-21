@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
 
+//create game 
 const Create = () => {
   const [name, setName] = useState('');
   const [genre, setGenre] = useState('');
@@ -17,6 +18,7 @@ const Create = () => {
       .catch(error => console.error('Error:', error));
   };
 
+  //add new game 
   return (
     <div>
       <h2>Add New Game</h2>
@@ -55,6 +57,7 @@ const Create = () => {
             value={rating}
             onChange={e => setRating(e.target.value)}
           />
+          {/* add game button */}
         </Form.Group>
         <Button variant="primary" type="submit">
           Add Game

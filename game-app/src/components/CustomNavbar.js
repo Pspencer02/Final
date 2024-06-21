@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
+//navbar
 const CustomNavbar = () => (
   <Navbar bg="dark" variant="dark" expand="lg">
     <Navbar.Brand href="/">Video Game Tracker</Navbar.Brand>

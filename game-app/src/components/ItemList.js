@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Table, Button } from 'react-bootstrap';
 
+//show games 
 const ItemList = ({ games, deleteGame }) => {
   return (
     <Table striped bordered hover>
@@ -22,6 +23,7 @@ const ItemList = ({ games, deleteGame }) => {
             <td>{game.releaseDate}</td>
             <td>{game.rating}</td>
             <td>
+            {/* delete and edit button */}
               <Link to={`/edit/${game.id}`}>
                 <Button variant="warning" className="mr-2">Edit</Button>
               </Link>

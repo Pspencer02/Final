@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
-
+//edit games 
 const Edit = () => {
   const { id } = useParams();
   const [name, setName] = useState('');
@@ -21,14 +21,14 @@ const Edit = () => {
       })
       .catch(error => console.error('Error:', error));
   }, [id]);
-
+//submit handle 
   const handleSubmit = e => {
     e.preventDefault();
     axios.put(`https://667491d775872d0e0a96e75b.mockapi.io/games/${id}`, { name, genre, releaseDate, rating })
       .then(() => navigate('/'))
       .catch(error => console.error('Error:', error));
   };
-
+//return edit game 
   return (
     <div>
       <h2>Edit Game</h2>
